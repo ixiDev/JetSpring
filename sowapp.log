@@ -1,0 +1,137 @@
+2022-08-22 19:47:05.234  INFO 49291 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 49291 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:47:05.236  INFO 49291 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:47:05.586  INFO 49291 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:47:05.648  INFO 49291 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:47:06.297  INFO 49291 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:47:06.329  INFO 49291 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:47:06.442  INFO 49291 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:47:06.513  INFO 49291 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:47:06.794  INFO 49291 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:47:06.819  INFO 49291 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:47:07.369  INFO 49291 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:47:07.389  INFO 49291 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:47:07.999  INFO 49291 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 3.116 seconds (JVM running for 3.955)
+2022-08-22 19:47:08.078  INFO 49291 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Generating Admin Data
+2022-08-22 19:47:08.201  INFO 49291 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Admin credential info generated
+2022-08-22 19:47:26.531  INFO 49291 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:47:26.532  INFO 49291 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:47:26.537  INFO 49291 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:49:03.501  INFO 49516 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 49516 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:49:03.504  INFO 49516 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:49:03.947  INFO 49516 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:49:04.014  INFO 49516 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:49:04.920  INFO 49516 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:49:04.974  INFO 49516 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:49:05.124  INFO 49516 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:49:05.201  INFO 49516 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:49:05.486  INFO 49516 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:49:05.510  INFO 49516 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:49:05.855  INFO 49516 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:49:05.862  INFO 49516 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:49:06.377  INFO 49516 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 3.283 seconds (JVM running for 4.027)
+2022-08-22 19:49:06.461  INFO 49516 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:49:14.292  INFO 49516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:49:14.293  INFO 49516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:49:14.300  INFO 49516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:50:28.925  INFO 49741 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 49741 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:50:28.927  INFO 49741 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:50:29.282  INFO 49741 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:50:29.330  INFO 49741 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:50:29.907  INFO 49741 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:50:29.941  INFO 49741 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:50:30.059  INFO 49741 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:50:30.139  INFO 49741 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:50:30.413  INFO 49741 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:50:30.436  INFO 49741 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:50:30.804  INFO 49741 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:50:30.811  INFO 49741 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:50:31.338  INFO 49741 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.731 seconds (JVM running for 3.409)
+2022-08-22 19:50:31.413  INFO 49741 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:51:09.330  INFO 49741 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:51:09.332  INFO 49741 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:51:09.338  INFO 49741 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:51:15.304  INFO 49941 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 49941 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:51:15.306  INFO 49941 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:51:15.664  INFO 49941 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:51:15.707  INFO 49941 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:51:16.285  INFO 49941 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:51:16.316  INFO 49941 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:51:16.441  INFO 49941 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:51:16.516  INFO 49941 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:51:16.789  INFO 49941 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:51:16.814  INFO 49941 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:51:17.184  INFO 49941 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:51:17.191  INFO 49941 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:51:17.717  INFO 49941 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.741 seconds (JVM running for 3.484)
+2022-08-22 19:51:17.792  INFO 49941 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:51:23.817  INFO 49941 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:51:23.818  INFO 49941 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:51:23.825  INFO 49941 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:53:24.258  INFO 50166 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 50166 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:53:24.260  INFO 50166 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:53:24.627  INFO 50166 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:53:24.672  INFO 50166 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:53:25.270  INFO 50166 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:53:25.304  INFO 50166 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:53:25.417  INFO 50166 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:53:25.489  INFO 50166 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:53:25.751  INFO 50166 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:53:25.773  INFO 50166 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:53:26.124  INFO 50166 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:53:26.130  INFO 50166 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:53:26.732  INFO 50166 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.78 seconds (JVM running for 3.457)
+2022-08-22 19:53:26.816  INFO 50166 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:53:56.570  INFO 50166 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:53:56.572  INFO 50166 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:53:56.577  INFO 50166 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:55:19.848  INFO 50384 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 50384 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:55:19.850  INFO 50384 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:55:20.169  INFO 50384 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:55:20.211  INFO 50384 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:55:20.804  INFO 50384 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:55:20.838  INFO 50384 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:55:20.954  INFO 50384 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:55:21.024  INFO 50384 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:55:21.286  INFO 50384 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:55:21.308  INFO 50384 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:55:21.670  INFO 50384 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:55:21.676  INFO 50384 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:55:22.239  INFO 50384 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.684 seconds (JVM running for 3.331)
+2022-08-22 19:55:22.317  INFO 50384 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:55:36.944  INFO 50384 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:55:36.945  INFO 50384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:55:36.951  INFO 50384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:56:28.453  INFO 50614 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 50614 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:56:28.455  INFO 50614 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:56:28.818  INFO 50614 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:56:28.861  INFO 50614 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:56:29.469  INFO 50614 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:56:29.504  INFO 50614 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:56:29.629  INFO 50614 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:56:29.708  INFO 50614 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:56:29.986  INFO 50614 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:56:30.009  INFO 50614 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:56:30.372  INFO 50614 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:56:30.378  INFO 50614 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:56:30.895  INFO 50614 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.753 seconds (JVM running for 3.43)
+2022-08-22 19:56:30.969  INFO 50614 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:56:39.324  INFO 50614 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:56:39.325  INFO 50614 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:56:39.331  INFO 50614 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 19:57:22.419  INFO 50816 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.4 on zbook with PID 50816 (started by ixidev in /home/ixidev/IdeaProjects/JetSpring)
+2022-08-22 19:57:22.421  INFO 50816 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-22 19:57:22.788  INFO 50816 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 19:57:22.833  INFO 50816 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-08-22 19:57:23.426  INFO 50816 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 19:57:23.458  INFO 50816 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 19:57:23.573  INFO 50816 --- [AWT-EventQueue-0] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 19:57:23.645  INFO 50816 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 19:57:23.904  INFO 50816 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 19:57:23.925  INFO 50816 --- [AWT-EventQueue-0] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 19:57:24.287  INFO 50816 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 19:57:24.293  INFO 50816 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:57:24.825  INFO 50816 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 2.711 seconds (JVM running for 3.347)
+2022-08-22 19:57:24.900  INFO 50816 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2022-08-22 19:57:29.663  INFO 50816 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 19:57:29.664  INFO 50816 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 19:57:29.670  INFO 50816 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
