@@ -1,6 +1,6 @@
 package ixidev.jetspring.data.entities
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "application_user")

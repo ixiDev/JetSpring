@@ -91,16 +91,15 @@ fun WindowScope.AppWindowTitleBar(
 private fun DarkModeButton(themeState: AppThemeState) {
 
     Card(
+        onClick = {
+            themeState.isDarkTheme = !themeState.isDarkTheme
+        },
         modifier = Modifier
 
             .fillMaxHeight()
             .aspectRatio(1f)
             .padding(5.dp),
-        onClick = {
-            themeState.isDarkTheme = !themeState.isDarkTheme
-        },
-        shape = CircleShape,
-        role = Role.Button
+        shape = CircleShape
     ) {
         val tint = if (themeState.isDarkTheme) Color.Yellow else Color.DarkGray
         Icon(

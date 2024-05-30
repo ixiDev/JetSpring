@@ -10,7 +10,7 @@ Fullstack Desktop app using :
 
 - For packaging the app as .deb or .exe file you need Java JDK 15+
 - Install MySQL server and create a database named *jet_spring* take a look
-  at [application.properties](src/jvmMain/resources/application.properties) to config database
+  at [application.properties](composeApp/src/commonMain/resources/application.properties) to config database
 
 ### Screenshots
 
@@ -20,7 +20,7 @@ Fullstack Desktop app using :
 
 - Username : *admin@jetspring.com*
 - Password : *admin*
-- Config default info in [DataGenerator.kt](src/jvmMain/kotlin/ixidev/jetspring/data/DataGenerator.kt)
+- Config default info in [DataGenerator.kt](composeApp/src/commonMain/kotlin/ixidev/jetspring/data/DataGenerator.kt)
   ![](screenshots/login_screen.png)
 
 #### Home Screen

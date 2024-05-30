@@ -1,16 +1,17 @@
 package ixidev.jetspring.data.entities
 
+
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.Id
+import jakarta.persistence.MappedSuperclass
 import org.hibernate.annotations.Type
 import java.util.*
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.MappedSuperclass
 
 @MappedSuperclass
 abstract class AbstractEntity {
     @Id
     @GeneratedValue
-    @Type(type = "uuid-char")
+//    @Type("uuid-char")
     var id: UUID? = null
     override fun hashCode(): Int {
         return if (id != null) {

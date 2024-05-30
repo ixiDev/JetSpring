@@ -1,0 +1,359 @@
+2024-05-30T22:58:50.704+01:00  INFO 32519 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 32519 (started by idali in /Users/idali/IdeaProjects/JtSpring2/composeApp)
+2024-05-30T22:58:50.705+01:00  INFO 32519 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T22:58:50.866+01:00  INFO 32519 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T22:58:50.883+01:00  INFO 32519 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-05-30T22:58:51.083+01:00  INFO 32519 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T22:58:51.103+01:00  INFO 32519 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T22:58:51.115+01:00  INFO 32519 --- [AWT-EventQueue-0] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T22:58:51.223+01:00  INFO 32519 --- [AWT-EventQueue-0] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T22:58:51.232+01:00  INFO 32519 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T22:58:52.286+01:00  WARN 32519 --- [AWT-EventQueue-0] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:192) ~[composeApp-desktop.jar:na]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:55) ~[composeApp-desktop.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:117) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:116) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:233) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:232) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:228) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:223) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ActualJvm_jvmKt.invokeComposable(ActualJvm.jvm.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.doCompose(Composer.kt:3303) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.composeContent$runtime(Composer.kt:3236) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:725) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1071) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:633) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:619) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2.invokeSuspend(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-2.0.0.jar:2.0.0-release-341]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) ~[kotlinx-coroutines-core-jvm-1.8.1.jar:na]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[na:na]
+
+2024-05-30T22:58:52.296+01:00 ERROR 32519 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-05-30T22:58:52.297+01:00  WARN 32519 --- [AWT-EventQueue-0] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-05-30T22:58:52.308+01:00  INFO 32519 --- [AWT-EventQueue-0] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-30T22:58:52.320+01:00 ERROR 32519 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:192) ~[composeApp-desktop.jar:na]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:55) ~[composeApp-desktop.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:117) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:116) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:233) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:232) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:228) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:223) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ActualJvm_jvmKt.invokeComposable(ActualJvm.jvm.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.doCompose(Composer.kt:3303) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.composeContent$runtime(Composer.kt:3236) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:725) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1071) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:633) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:619) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2.invokeSuspend(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-2.0.0.jar:2.0.0-release-341]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) ~[kotlinx-coroutines-core-jvm-1.8.1.jar:na]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[na:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 53 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 68 common frames omitted
+
+2024-05-30T23:24:13.115+01:00  INFO 37288 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 37288 (started by idali in /Users/idali/IdeaProjects/JtSpring2/composeApp)
+2024-05-30T23:24:13.116+01:00  INFO 37288 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T23:24:13.264+01:00  INFO 37288 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T23:24:13.281+01:00  INFO 37288 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-05-30T23:24:13.472+01:00  INFO 37288 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T23:24:13.493+01:00  INFO 37288 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T23:24:13.505+01:00  INFO 37288 --- [AWT-EventQueue-0] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T23:24:13.615+01:00  INFO 37288 --- [AWT-EventQueue-0] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T23:24:13.623+01:00  INFO 37288 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T23:24:13.787+01:00  INFO 37288 --- [AWT-EventQueue-0] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ff91511
+2024-05-30T23:24:13.788+01:00  INFO 37288 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T23:24:14.076+01:00  INFO 37288 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T23:24:14.125+01:00  INFO 37288 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:24:14.188+01:00  WARN 37288 --- [AWT-EventQueue-0] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in URL [jar:file:/Users/idali/IdeaProjects/JtSpring2/composeApp/build/libs/composeApp-desktop.jar!/ixidev/jetspring/data/services/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in ixidev.jetspring.data.services.UserRepository defined in @EnableJpaRepositories declared on Main: kotlin/reflect/full/KClasses
+2024-05-30T23:24:14.188+01:00  INFO 37288 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:24:14.189+01:00  INFO 37288 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T23:24:14.225+01:00  INFO 37288 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T23:24:14.228+01:00  INFO 37288 --- [AWT-EventQueue-0] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-30T23:24:14.234+01:00 ERROR 37288 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in URL [jar:file:/Users/idali/IdeaProjects/JtSpring2/composeApp/build/libs/composeApp-desktop.jar!/ixidev/jetspring/data/services/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in ixidev.jetspring.data.services.UserRepository defined in @EnableJpaRepositories declared on Main: kotlin/reflect/full/KClasses
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:192) ~[composeApp-desktop.jar:na]
+	at ixidev.jetspring.MainKt$main$1.invoke(Main.kt:55) ~[composeApp-desktop.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:117) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$application$1$1.invoke(Application.desktop.kt:116) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:116) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:233) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1$1.invoke(Application.desktop.kt:232) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:228) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:223) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2$1.invoke(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:107) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.jb.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ActualJvm_jvmKt.invokeComposable(ActualJvm.jvm.kt:33) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.doCompose(Composer.kt:3303) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.ComposerImpl.composeContent$runtime(Composer.kt:3236) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:725) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1071) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:633) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:619) ~[runtime-desktop-1.6.10.jar:na]
+	at androidx.compose.ui.window.Application_desktopKt$awaitApplication$2$1$2.invokeSuspend(Application.desktop.kt:221) ~[ui-desktop-1.6.10.jar:na]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-2.0.0.jar:2.0.0-release-341]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) ~[kotlinx-coroutines-core-jvm-1.8.1.jar:na]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[na:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in ixidev.jetspring.data.services.UserRepository defined in @EnableJpaRepositories declared on Main: kotlin/reflect/full/KClasses
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 57 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: kotlin/reflect/full/KClasses
+	at org.springframework.data.mapping.model.PreferredConstructorDiscoverer$Discoverers$3.lambda$discover$5(PreferredConstructorDiscoverer.java:202) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.springframework.data.mapping.model.PreferredConstructorDiscoverer$Discoverers$3.discover(PreferredConstructorDiscoverer.java:199) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.model.PreferredConstructorDiscoverer.discover(PreferredConstructorDiscoverer.java:84) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.model.InstanceCreatorMetadataDiscoverer.discover(InstanceCreatorMetadataDiscoverer.java:116) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.model.BasicPersistentEntity.<init>(BasicPersistentEntity.java:116) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.jpa.mapping.JpaPersistentEntityImpl.<init>(JpaPersistentEntityImpl.java:59) ~[spring-data-jpa-3.3.0.jar:3.3.0]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.createPersistentEntity(JpaMetamodelMappingContext.java:66) ~[spring-data-jpa-3.3.0.jar:3.3.0]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.createPersistentEntity(JpaMetamodelMappingContext.java:1) ~[spring-data-jpa-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.context.AbstractMappingContext.doAddPersistentEntity(AbstractMappingContext.java:448) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:424) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:320) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:246) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:97) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$6(RepositoryFactoryBeanSupport.java:289) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at java.base/java.util.Optional.ifPresent(Optional.java:178) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:289) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.3.0.jar:3.3.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: kotlin.reflect.full.KClasses
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 88 common frames omitted
+
+2024-05-30T23:25:42.026+01:00  INFO 37306 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 37306 (started by idali in /Users/idali/IdeaProjects/JtSpring2/composeApp)
+2024-05-30T23:25:42.027+01:00  INFO 37306 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T23:25:42.181+01:00  INFO 37306 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T23:25:42.199+01:00  INFO 37306 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-05-30T23:25:42.475+01:00  INFO 37306 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T23:25:42.495+01:00  INFO 37306 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T23:25:42.507+01:00  INFO 37306 --- [AWT-EventQueue-0] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T23:25:42.613+01:00  INFO 37306 --- [AWT-EventQueue-0] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T23:25:42.621+01:00  INFO 37306 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T23:25:42.755+01:00  INFO 37306 --- [AWT-EventQueue-0] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@684d29ae
+2024-05-30T23:25:42.755+01:00  INFO 37306 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T23:25:43.043+01:00  INFO 37306 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T23:25:43.079+01:00  INFO 37306 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:25:43.258+01:00  INFO 37306 --- [AWT-EventQueue-0] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-05-30T23:25:43.316+01:00  INFO 37306 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 1.432 seconds (process running for 1.898)
+2024-05-30T23:25:43.410+01:00  INFO 37306 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Generating Admin Data
+2024-05-30T23:25:43.502+01:00  INFO 37306 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Admin credential info generated
+2024-05-30T23:26:35.475+01:00  INFO 37306 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:26:35.477+01:00  INFO 37306 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T23:26:35.484+01:00  INFO 37306 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T23:29:29.677+01:00  INFO 37365 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 37365 (started by idali in /Users/idali/IdeaProjects/JetSpring/composeApp)
+2024-05-30T23:29:29.679+01:00  INFO 37365 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T23:29:29.831+01:00  INFO 37365 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T23:29:29.848+01:00  INFO 37365 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-05-30T23:29:30.139+01:00  INFO 37365 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T23:29:30.167+01:00  INFO 37365 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T23:29:30.184+01:00  INFO 37365 --- [AWT-EventQueue-0] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T23:29:30.287+01:00  INFO 37365 --- [AWT-EventQueue-0] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T23:29:30.295+01:00  INFO 37365 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T23:29:30.425+01:00  INFO 37365 --- [AWT-EventQueue-0] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@141dd458
+2024-05-30T23:29:30.426+01:00  INFO 37365 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T23:29:30.712+01:00  INFO 37365 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T23:29:30.745+01:00  INFO 37365 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:29:30.928+01:00  INFO 37365 --- [AWT-EventQueue-0] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-05-30T23:29:30.982+01:00  INFO 37365 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 1.451 seconds (process running for 1.925)
+2024-05-30T23:29:31.080+01:00  INFO 37365 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2024-05-30T23:29:34.194+01:00  INFO 37365 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:29:34.199+01:00  INFO 37365 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T23:29:34.212+01:00  INFO 37365 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T23:30:08.981+01:00  INFO 37388 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 37388 (started by idali in /Users/idali/IdeaProjects/JetSpring/composeApp)
+2024-05-30T23:30:08.982+01:00  INFO 37388 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T23:30:09.131+01:00  INFO 37388 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T23:30:09.149+01:00  INFO 37388 --- [AWT-EventQueue-0] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-05-30T23:30:09.456+01:00  INFO 37388 --- [AWT-EventQueue-0] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T23:30:09.477+01:00  INFO 37388 --- [AWT-EventQueue-0] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T23:30:09.489+01:00  INFO 37388 --- [AWT-EventQueue-0] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T23:30:09.590+01:00  INFO 37388 --- [AWT-EventQueue-0] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T23:30:09.599+01:00  INFO 37388 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T23:30:09.734+01:00  INFO 37388 --- [AWT-EventQueue-0] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55e45f93
+2024-05-30T23:30:09.735+01:00  INFO 37388 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T23:30:10.022+01:00  INFO 37388 --- [AWT-EventQueue-0] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T23:30:10.063+01:00  INFO 37388 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:30:10.247+01:00  INFO 37388 --- [AWT-EventQueue-0] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-05-30T23:30:10.302+01:00  INFO 37388 --- [AWT-EventQueue-0] o.s.boot.SpringApplication               : Started application in 1.469 seconds (process running for 1.932)
+2024-05-30T23:30:10.398+01:00  INFO 37388 --- [AWT-EventQueue-0] ixidev.jetspring.data.DataGenerator      : Using existing database
+2024-05-30T23:30:12.779+01:00  INFO 37388 --- [AWT-EventQueue-0] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T23:30:12.783+01:00  INFO 37388 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T23:30:12.795+01:00  INFO 37388 --- [AWT-EventQueue-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,8 +1,8 @@
 package ixidev.jetspring.data.entities
 
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.MappedSuperclass
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.Id
+import jakarta.persistence.MappedSuperclass
 
 /***
  * Created by ixiDev on 21/08/2022
